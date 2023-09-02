@@ -69,9 +69,15 @@
             background: linear-gradient(to left, rgb(0, 137, 201), rgb(183, 0, 85));
         }
 
+        select {
+            outline: none;
+            border: none;
+            padding: 6px 10px;
+        }
+
 
         @media (max-width:768px) {
-             .content{
+            .content {
                 width: 95% !important;
                 margin: 0 auto;
             }
@@ -79,12 +85,14 @@
             h1 {
                 font-size: 28px;
             }
-            textarea{
+
+            textarea {
                 width: 90%;
             }
 
             button {
                 width: 60%;
+                margin: 25px 0;
             }
         }
     </style>
@@ -100,6 +108,7 @@
 
         <div>
             <textarea name="" id="TextInput" placeholder="Write something to listen"></textarea><br>
+            <small class="text-white"> Select your Language : <select></select></small>
             <button id="Button">Listen Now 🔊</button>
         </div>
     </div>
